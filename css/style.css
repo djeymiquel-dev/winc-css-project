@@ -1,0 +1,178 @@
+:root {
+  /* screaming borders */
+  --border-red: 1px solid red;
+  --border-orange: 1px solid orange;
+  --border-yellow: 1px solid yellow;
+
+  /* colors */
+  --Purple-100: hsl(254, 88%, 90%);
+  --Purple-500: hsl(256, 67%, 59%);
+  --Yellow-100: hsl(31, 66%, 93%);
+  --Yellow-500: hsl(39, 100%, 71%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+
+  /* font size paragraph */
+  --paragraph-font-size: 18px;
+
+  /* border-radius */
+  --border-radius: 10px;
+
+  /* margins */
+  --small-margin: 0.5rem;
+  --normal-margin: 1rem;
+  --large-margin: 1.5rem;
+
+  /* paddings */
+  --small-padding: 0.5rem;
+  --normal-padding: 1rem;
+  --large-padding: 1.5rem;
+}
+
+@font-face {
+  font-family: "DSSans";
+  src: url("/assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DSSansItalic";
+  src: url("/assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  /* font-weight: 400; */
+}
+
+/* mobile layout */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: var(--normal-padding);
+}
+
+.flex-items {
+  border-radius: var(--border-radius);
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--White);
+  background-color: var(--Purple-500);
+  padding: var(--large-padding);
+}
+
+.card-1 img {
+  border: var(--border-orange);
+  margin-top: var(--normal-margin);
+}
+
+.card-1 p {
+  margin-top: var(--small-margin);
+}
+
+.span-10x {
+  color: var(--Yellow-500);
+}
+
+.span-Faster {
+  font-family: "DSSansItalic", sans-serif;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--normal-margin);
+  padding: var(--normal-padding);
+}
+
+.card-3 {
+  background-color: var(--Yellow-500);
+  margin-top: var(--normal-margin);
+  padding: var(--normal-padding);
+  padding-bottom: 0;
+  padding-right: 6rem;
+}
+
+.card-3 img {
+  display: flex;
+  padding-top: var(--normal-padding);
+}
+
+.card-4 {
+  color: var(--Black);
+  background-color: var(--Purple-100);
+  padding: var(--normal-padding);
+  text-align: center;
+}
+
+.card-4 img {
+  margin-top: var(--normal-margin);
+  margin-bottom: var(--normal-margin);
+}
+
+.card-4 p {
+  margin-bottom: var(--normal-margin);
+}
+
+.card-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--White);
+  background-color: var(--Purple-500);
+  padding: 3rem;
+  padding-top: var(--normal-padding);
+  padding-bottom: var(--normal-padding);
+  text-align: center;
+}
+
+.card-5 img {
+  margin-bottom: var(--large-margin);
+}
+
+.card-6 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--normal-padding);
+}
+
+.card-6 p {
+  margin-top: var(--small-margin);
+  margin-bottom: var(--normal-margin);
+}
+
+.card-6 img {
+  padding-right: calc(var(--normal-padding) * 6);
+}
+
+.card-7 {
+  background-color: var(--Yellow-100);
+  padding: var(--large-padding);
+}
+
+.card-7 h2 {
+  margin-bottom: var(--normal-margin);
+}
+
+.card-7 img {
+  padding-right: calc(var(--normal-padding) * 6);
+}
+
+.span-quicker {
+  font-family: "DSSansItalic", sans-serif;
+  color: var(--Purple-500);
+}
+
+.card-8 {
+  background-color: var(--Yellow-500);
+  padding: var(--normal-padding);
+}
+
+.card-8 img {
+  margin-top: var(--normal-margin);
+  padding-right: calc(var(--normal-padding) * 6);
+}
